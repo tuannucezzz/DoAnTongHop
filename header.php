@@ -180,12 +180,12 @@ session_start();
 				<!-- container -->
 				<div class="container">
 					<!-- row -->
-					<div class="row">
+					<div class="row header-nav">
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="#" class="logo">
-								<font style="font-style:normal; font-size: 33px;color: aliceblue;font-family: serif">
+								<font style="font-style:normal; font-size: 33px;color: aliceblue;font-family: serif;">
                                         HHT Shop
                                     </font>
 									

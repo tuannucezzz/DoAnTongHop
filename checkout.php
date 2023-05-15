@@ -289,7 +289,7 @@ span.price {
 								<input class="input" type="email" placeholder="Enter Your Email">
 								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
 							</form>
-							<ul class="newsletter-follow">
+							<!-- <ul class="newsletter-follow">
 								<li>
 									<a href="#"><i class="fa fa-facebook"></i></a>
 								</li>
@@ -302,7 +302,7 @@ span.price {
 								<li>
 									<a href="#"><i class="fa fa-pinterest"></i></a>
 								</li>
-							</ul>
+							</ul> -->
 						</div>
 					</div>
 				</div>
