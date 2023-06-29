@@ -85,7 +85,7 @@ if(isset($_POST["getProducthome"])){
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price'>$pro_price<del class='product-old-price'>$990.00</del></h4>
+										<h4 class='product-price'>$pro_price<del class='product-old-price'>92,849,999Đ</del></h4>
 									</div></a>
 								</div>
                         
@@ -133,7 +133,7 @@ if(isset($_POST["gethomeProduct"])){
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>$990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>92,849,999Đ</del></h4>
 										<div class='product-rating'>";
 										$rating_query = "SELECT ROUND(AVG(rating),1) AS avg_rating  FROM reviews WHERE product_id='$pro_id '";
 										$run_review_query = mysqli_query($con,$rating_query);
