@@ -23,15 +23,6 @@ if(isset($_POST["categoryhome"])){
 								echo"<li><a href='products.php?cat_id=".$cid."'>$cat_name</a></li>";
 							}
 						}
-
-						// <li><a href='electronics.php'>Electronics</a></li>
-						// <li><a href='ladies_wears.php'>Ladies Wears</a></li>
-						// <li><a href='mens_wear.php'>Mens Wear</a></li>
-						// <li><a href='kids_wear.php'>Kids Wear</a></li>
-						// <li><a href='furnitures.php'>Furnitures</a></li>
-						// <li><a href='home_appliances.php'>Home Appliances</a></li>
-						// <li><a href='electronics_gadgets.php'>Electronics Gadgets</a></li>
-                    
 				 echo"</ul>
 					<!-- /NAV -->
 				</div>

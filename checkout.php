@@ -249,7 +249,7 @@ span.price {
 						$amount_ = $_POST['amount_'.$i];
 						
 						$quantity_ = $_POST['quantity_'.$i];
-						$total=$total+$amount_ ;
+						$total= number_format($total+$amount_, 0, '', ',').'Đ';
 						$sql = "SELECT product_id FROM products WHERE product_title='$item_name_'";
 						$query = mysqli_query($con,$sql);
 						$row=mysqli_fetch_array($query);
@@ -268,7 +268,7 @@ span.price {
 				</table>
 				<hr>
 				
-				<h3>total<span class='price' style='color:black'><b>$$total</b></span></h3>";
+				<h3>total<span class='price' style='color:black'><b>$total</b></span></h3>";
 					
 				}
 				?>

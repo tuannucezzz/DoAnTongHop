@@ -130,7 +130,7 @@ include "header.php";
 										
 									</div>
 									<div>
-										<h3 class="product-price">$'.$row['product_price'].'<del class="product-old-price">92,849,999Đ</del></h3>
+										<h3 class="product-price">$'.number_format($row['product_price'], 0, '', ',').'Đ'.'<del class="product-old-price">92,849,999Đ</del></h3>
 										<span class="product-available">In Stock</span>
 									</div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
