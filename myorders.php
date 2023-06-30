@@ -11,11 +11,11 @@ include "header.php";
 <section class="section main main-raised">       
 	<div class="container-fluid ">
 		<div class="wrap cf">
-            <h1 class="projTitle">All Your Orders</h1>
+            <h1 class="projTitle">Tất cả đơn hàng của bạn</h1>
             <div class="heading cf">
-                <h1>My Orders</h1>
-                <h1 style="margin-left:55%">qty</h1>
-                <a href="store.php" class="continue">Continue Shopping</a>
+                <h1>Đơn hàng</h1>
+                <h1 style="margin-left:55%">Số lượng</h1>
+                <a href="store.php" class="continue">Tiếp tục mua sắm</a>
             </div>
             <div class="cart">
                 <ul class="cartWrap">
@@ -55,7 +55,7 @@ include "header.php";
                                         
                                         <p> '.$qty.' x '.$product_price.'</p>
                                         
-                                        <p class="stockStatus"> Delivered</p>
+                                        <p class="stockStatus"> Đã vận chuyển</p>
                                         </div>  
                                     
                                         <div class="prodTotal cartSection"><p>'.$qty.'</p></div>
@@ -79,16 +79,16 @@ include "header.php";
                             </ul>
                         </div>  
                         <div class="special"><div class="specialContent">
-                                Thanks for Using our Platform
+                                Cảm ơn đã sử dụng hệ thống của chúng tôi!
                         </div></div>
                         <div class="subtotal cf">
                             <ul>
-                            <li class="totalRow"><span class="label">Subtotal</span><span class="value">'.$prev_total.'</span></li>
+                            <li class="totalRow"><span class="label">Thành tiền</span><span class="value">'.$prev_total.'</span></li>
                             
-                                <li class="totalRow"><span class="label">Shipping</span><span class="value">0.00</span></li>
+                                <li class="totalRow"><span class="label">Phí vận chuyển</span><span class="value">0.00</span></li>
                             
-                                    <li class="totalRow"><span class="label">Tax</span><span class="value">0.00</span></li>
-                                    <li class="totalRow final"><span class="label">Total</span><span class="value">&#x20B9;'.$prev_total.'</span></li>
+                                    <li class="totalRow"><span class="label">Thuế</span><span class="value">0.00</span></li>
+                                    <li class="totalRow final"><span class="label">Tổng tiền</span><span class="value">'.$prev_total.'</span></li>
                             
                             </ul>
                         </div>
@@ -106,7 +106,7 @@ include "header.php";
                                         
                                         <p> '.$qty.' x '.$product_price.'</p>
                                         
-                                        <p class="stockStatus out"> Shipping</p>
+                                        <p class="stockStatus out"> Đang vận chuyển</p>
                                         </div>  
                                     
                                         <div class="prodTotal cartSection"><p>'.$qty.'</p></div>
@@ -128,16 +128,16 @@ include "header.php";
                                 echo '
                                  
                                     <div class="special"><div class="specialContent">
-                                            Thanks for Using our Platform
+                                        Cảm ơn đã sử dụng hệ thống của chúng tôi!
                                     </div></div>
                                     <div class="subtotal cf">
                                         <ul>
-                                        <li class="totalRow"><span class="label">Subtotal</span><span class="value">'.$prev_total.'</span></li>
+                                        <li class="totalRow"><span class="label">Thành tiền</span><span class="value">'.$prev_total.'</span></li>
                                         
-                                            <li class="totalRow"><span class="label">Shipping</span><span class="value">0.00</span></li>
+                                            <li class="totalRow"><span class="label">Phí vận chuyển</span><span class="value">0Đ</span></li>
                                         
-                                                <li class="totalRow"><span class="label">Tax</span><span class="value">0.00</span></li>
-                                                <li class="totalRow final"><span class="label">Total</span><span class="value">'.$prev_total.'</span></li>
+                                                <li class="totalRow"><span class="label">Thuế</span><span class="value">0Đ</span></li>
+                                                <li class="totalRow final"><span class="label">Tổng tiền</span><span class="value">'.$prev_total.'</span></li>
                                         
                                         </ul>
                                     </div>
