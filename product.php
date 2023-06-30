@@ -255,7 +255,7 @@ include "header.php";
 													
 													<textarea class="input" name="review" placeholder="Nhập đánh giá"></textarea>
 													<div class="input-rating">
-														<span>Your Rating: </span>
+														<span>Số sao đánh giá: </span>
 														<div class="stars">
 															<input id="star5" name="rating" value="5" type="radio" required><label for="star5"></label>
 															<input id="star4" name="rating" value="4" type="radio" required><label for="star4"></label>
@@ -264,7 +264,7 @@ include "header.php";
 															<input id="star1" name="rating" value="1" type="radio" required><label for="star1"></label>
 														</div>
 													</div>
-													<button class="primary-btn" name="review_submit">Submit</button>
+													<button class="primary-btn" name="review_submit">Đánh giá</button>
 												</form>
 											</div>
 										</div>
