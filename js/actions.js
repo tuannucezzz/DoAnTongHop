@@ -288,7 +288,7 @@ $(document).ready(function(){
 			method : "POST",
 			data : {addToCart:1,proId:pid},
 			success : function(data){
-				$("#desc").html("Added to Cart");
+				$("#desc").html("Đã thêm vào giỏ hàng!");
 				launch_toast();
 				count_item();
 				count_wishlist_item();
@@ -310,7 +310,7 @@ $(document).ready(function(){
 			method : "POST",
 			data : {addToWishlist:1,proId:pid},
 			success : function(data){
-				$("#desc").html("Added to WishList");
+				$("#desc").html("Đã thêm vào danh sách ưa thích!");
 				launch_toast();
 				count_wishlist_item();
 				count_item();
