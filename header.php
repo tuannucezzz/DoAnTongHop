@@ -154,7 +154,7 @@ session_start();
                             }else{ 
                                 echo '
                                 <div class="dropdownn">
-                                  <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> Tài khoản của tôi</a>
+                                  <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> Tài khoản</a>
 								  <div class="dropdownn-content">
 								  	<a href="admin/login.php" ><i class="fa fa-user" aria-hidden="true" ></i>Quản trị</a>
                                     <a href="signin_form.php"><i class="fa fa-sign-in" aria-hidden="true" ></i>Đăng nhập</a>
