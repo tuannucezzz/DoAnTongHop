@@ -19,22 +19,21 @@ include "topheader.php";
          <div class="col-md-14">
             <div class="card ">
               <div class="card-header card-header-primary">
-                <h4 class="card-title">Manage User</h4>
+                <h4 class="card-title">Quản lý thành viên</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive ps">
                   <table class="table tablesorter table-hover" id="">
                     <thead class=" text-primary">
-                      <tr><th>User id</th>
-                        <th>First_name</th>
-                        <th>last_name</th>
+                      <tr><th>STT</th>
+                        <th>Họ</th>
+                        <th>Tên</th>
                         <th>Email</th>
-                       
-                <th>User Password</th>
-                <th>mobile</th>
-                <th>city</th>
-                <th>Address</th>
-	<th><a href="addsuppliers.php" class="btn btn-success">Add New</a></th>
+                        <th>Mật khẩu</th>
+                        <th>SĐT</th>
+                        <th>Địa chỉ</th>
+                        <th>Thành phố</th>
+	<th><a href="addsuppliers.php" class="btn btn-success">Thêm mới</a></th>
                     </tr></thead>
                     <tbody>
                       <?php 

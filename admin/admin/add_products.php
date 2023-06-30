@@ -46,7 +46,7 @@ include "topheader.php";
          <div class="col-md-7">
             <div class="card">
               <div class="card-header card-header-primary">
-                <h5 class="title">Add Product</h5>
+                <h5 class="title">Thêm sản phẩm</h5>
               </div>
               <div class="card-body">
                 
@@ -54,41 +54,37 @@ include "topheader.php";
                     
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>Product Title</label>
+                        <label>Tên sản phẩm</label>
                         <input type="text" id="product_name" required name="product_name" class="form-control">
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="">
-                        <label for="">Add Image</label>
+                        <label for="">Thêm ảnh</label>
                         <input type="file" name="picture" required class="btn btn-fill btn-success" id="picture" >
                       </div>
                     </div>
                      <div class="col-md-12">
                       <div class="form-group">
-                        <label>Description</label>
+                        <label>Mô tả</label>
                         <textarea rows="4" cols="80" id="details" required name="details" class="form-control"></textarea>
                       </div>
                     </div>
                   
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>Pricing</label>
+                        <label>Đơn giá</label>
                         <input type="text" id="price" name="price" required class="form-control" >
                       </div>
                     </div>
                   </div>
-                 
-                  
-                
               </div>
-              
             </div>
           </div>
-          <div class="col-md-5">
+          <!-- <div class="col-md-5">
             <div class="card">
               <div class="card-header card-header-primary">
-                <h5 class="title">Categories</h5>
+                <h5 class="title">Phân loại</h5>
               </div>
               <div class="card-body">
                 
@@ -96,13 +92,13 @@ include "topheader.php";
                     
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>Product Category</label>
+                        <label>Loại sản phẩm</label>
                         <input type="number" id="product_type" name="product_type" required="[1-6]" class="form-control">
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label for="">Product Brand</label>
+                        <label for="">Tên hãng</label>
                         <input type="number" id="brand" name="brand" required class="form-control">
                       </div>
                     </div>
@@ -110,7 +106,7 @@ include "topheader.php";
                   
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>Product Keywords</label>
+                        <label>Từ khóa</label>
                         <input type="text" id="tags" name="tags" required class="form-control" >
                       </div>
                     </div>
@@ -121,8 +117,72 @@ include "topheader.php";
                   <button type="submit" id="btn_save" name="btn_save" required class="btn btn-fill btn-primary">Update Product</button>
               </div>
             </div>
+          </div> -->
+          <div class="col-md-5">
+            <div class="card">
+              <div class="card-header card-header-primary">
+                <h5 class="title">Phân loại</h5>
+              </div>
+              <div class="card-body">
+                
+                  <div class="row">
+                  <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="">Loại sản phẩm</label>
+                            <select id="product_type" name="product_type"  required class="form-control">
+                            <option value="" style="color:black;">Chọn phân loại</option>
+                            <?php 
+                                
+                                    $result1=mysqli_query($con,"SELECT * FROM `categories` ORDER BY `cat_id` ASC") or die ("query 1 incorrect.....");
+
+                                    while(list($cat_id,$cat_title)=mysqli_fetch_array($result1))
+                                    {
+                                    
+                                        if($cat_id==$product_type){
+                                            echo "<option value='$cat_id' style='color:black;' selected>$cat_title</option>";
+                                        }else{
+                                            echo "<option value='$cat_id' style='color:black;'>$cat_title</option>";
+                                        }
+                                    }
+                                    
+                                ?>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="">Tên hãng</label>
+                            <select id="brand" name="brand" required class="form-control">
+                            <option value="" style="color:black;">Chọn hãng</option>
+                                <?php
+                                    $result2=mysqli_query($con,"SELECT * FROM `brands`") or die ("query 1 incorrect.....");
+
+                                    while(list($brand_id,$brand_title)=mysqli_fetch_array($result2))
+                                    {
+                                        if($brand_id==$brand){
+                                            echo "<option value='$brand_id' style='color:black;' selected>$brand_title</option>";
+                                        }else{
+                                            echo "<option value='$brand_id' style='color:black;'>$brand_title</option>";
+                                        }
+                                    }
+                                ?>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Từ khóa</label>
+                        <input type="text" id="tags" name="tags" required class="form-control" >
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+              <div class="card-footer">
+                  <button type="submit" id="btn_save" name="btn_save" required class="btn btn-fill btn-primary">Cập nhật</button>
+              </div>
+            </div>
           </div>
-          
         </div>
          </form>
           
