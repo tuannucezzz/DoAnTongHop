@@ -41,7 +41,7 @@ if (isset($_POST["email"])) {
             $run_query = mysqli_query($con,$sql);
                 echo "<div class='alert alert-success'>
                     <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-                    <b>Thanks for subscribing</b>
+                    <b>Cảm ơn bạn đã đăng ký</b>
                 </div>";
                 
                 

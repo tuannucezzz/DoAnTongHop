@@ -143,15 +143,15 @@ white-space: nowrap;
 		<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
 		<form  onsubmit="return false" id="login" class="login100-form validate-form">
 		<span class="login100-form-title p-b-59">
-		Login
+		Đăng nhập
 		</span>
 		<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
 		<span class="label-input100">Email</span>
-		<input class="input100" type="email" name="email" placeholder="Email addess...">
+		<input class="input100" type="email" name="email" placeholder="Email">
 		<span class="focus-input100"></span>
 		</div>
 		<div class="wrap-input100 validate-input" data-validate="Password is required">
-		<span class="label-input100">Password</span>
+		<span class="label-input100">Mật khẩu</span>
 		<input class="input100" type="password" name="password" placeholder="*************">
 		<span class="focus-input100"></span>
 		</div>
@@ -160,9 +160,9 @@ white-space: nowrap;
 		<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
 		<label class="label-checkbox100" for="ckb1">
 		<span class="txt1">
-		I agree to the
+		Đồng ý
 		<a href="#" class="txt2 hov1">
-		Terms of User
+		Với các điều khoản
 		</a>
 		</span>
 		</label>
@@ -172,22 +172,22 @@ white-space: nowrap;
 		<div class="wrap-login100-form-btn">
 		<div class="login100-form-bgbtn"></div>
 		<button class="login100-form-btn" type="submit">
-		Sign in
+		Đăng nhập
 		</button>
 		</div>
 		<a href="signup_form.php" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
-		Sign up
+		Đăng ký
 		<i class="fa fa-long-arrow-right m-l-5"></i>
 		</a>
 		<a href="index.php" class="dis-block txt3 hov1 p-r-30 p-t-40 p-b-10 p-l-150">
-		Skip SignIn
+		Bỏ qua đăng nhập
 		<i class="fa fa-long-arrow-right m-l-5"></i>
 		</a>
 		</div>
         <div class="alert alert-danger"><h4 id="e_msg"></h4></div>
 		</form>
 		</div>
-        <div class="login100-more" style="background-image: url('img/slider_1.jpg');"></div>
+        <div class="login100-more" style="background-image: url('img/erik-mclean-nfoRa6NHTbU-unsplash.jpg');"></div>
 		</div>
 		</div>
 
