@@ -85,9 +85,9 @@ include "header.php";
                             <ul>
                             <li class="totalRow"><span class="label">Thành tiền</span><span class="value">'.$prev_total.'</span></li>
                             
-                                <li class="totalRow"><span class="label">Phí vận chuyển</span><span class="value">0.00</span></li>
+                                <li class="totalRow"><span class="label">Phí vận chuyển</span><span class="value">0Đ</span></li>
                             
-                                    <li class="totalRow"><span class="label">Thuế</span><span class="value">0.00</span></li>
+                                    <li class="totalRow"><span class="label">Thuế</span><span class="value">0Đ</span></li>
                                     <li class="totalRow final"><span class="label">Tổng tiền</span><span class="value">'.$prev_total.'</span></li>
                             
                             </ul>
