@@ -1,61 +1,61 @@
 <?php
 include "header.php";
 ?>
-		<!-- /BREADCRUMB -->
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
+<!-- /BREADCRUMB -->
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 900);
+    });
+});
 </script>
-		<script>
-    
-    (function (global) {
-	if(typeof (global) === "undefined")
-	{
-		throw new Error("window is undefined");
-	}
+<script>
+(function(global) {
+    if (typeof(global) === "undefined") {
+        throw new Error("window is undefined");
+    }
     var _hash = "!";
-    var noBackPlease = function () {
+    var noBackPlease = function() {
         global.location.href += "#";
-		// making sure we have the fruit available for juice....
-		// 50 milliseconds for just once do not cost much (^__^)
-        global.setTimeout(function () {
+        // making sure we have the fruit available for juice....
+        // 50 milliseconds for just once do not cost much (^__^)
+        global.setTimeout(function() {
             global.location.href += "!";
         }, 50);
-    };	
-	// Earlier we had setInerval here....
-    global.onhashchange = function () {
+    };
+    // Earlier we had setInerval here....
+    global.onhashchange = function() {
         if (global.location.hash !== _hash) {
             global.location.hash = _hash;
         }
     };
-    global.onload = function () {        
-		noBackPlease();
-		// disables backspace on page except on input fields and textarea..
-		document.body.onkeydown = function (e) {
+    global.onload = function() {
+        noBackPlease();
+        // disables backspace on page except on input fields and textarea..
+        document.body.onkeydown = function(e) {
             var elm = e.target.nodeName.toLowerCase();
-            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+            if (e.which === 8 && (elm !== 'input' && elm !== 'textarea')) {
                 e.preventDefault();
             }
             // stopping event bubbling up the DOM tree..
             e.stopPropagation();
-        };		
+        };
     };
 })(window);
 </script>
 
-		<!-- SECTION -->
-		<div class="section main main-raised">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- Product main img -->
-					
-					<?php 
+<!-- SECTION -->
+<div class="section main main-raised">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- Product main img -->
+
+            <?php 
 								include 'db.php';
 								$product_id = $_GET['p'];
 								
@@ -116,9 +116,9 @@ include "header.php";
 									';
                                     
 									?>
-									<!-- FlexSlider -->
-									
-									<?php 
+            <!-- FlexSlider -->
+
+            <?php 
 									echo '
 									
                                     
@@ -190,16 +190,16 @@ include "header.php";
 							$_SESSION['product_id'] = $row['product_id'];
 							}
 						} 
-						?>		
-					
-					
-					<div class="col-md-12">
-						<div id="product-tab">
-							<!-- product tab nav -->
-							<ul class="tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
-								<li><a data-toggle="tab" href="#tab2">Details</a></li>
-								<?php
+						?>
+
+
+            <div class="col-md-12">
+                <div id="product-tab">
+                    <!-- product tab nav -->
+                    <ul class="tab-nav">
+                        <li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
+                        <li><a data-toggle="tab" href="#tab2">Details</a></li>
+                        <?php
 												include 'db.php';
 												$product_id = $_GET['p'];
 									
@@ -209,95 +209,112 @@ include "header.php";
 												$reviews_count=$row["count"];
 												echo '<li><a data-toggle="tab" href="#tab3">Reviews ('.$reviews_count.')</a></li>';
 								?>
-								
-							</ul>
-							<!-- /product tab nav -->
 
-							<!-- product tab content -->
-							<div class="tab-content">
-								<!-- tab1  -->
-								<div id="tab1" class="tab-pane fade in active">
-									<div class="row">
-										<div class="col-md-12">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										</div>
-									</div>
-								</div>
-								<!-- /tab1  -->
+                    </ul>
+                    <!-- /product tab nav -->
 
-								<!-- tab2  -->
-								<div id="tab2" class="tab-pane fade in">
-									<div class="row">
-										<div class="col-md-12">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										</div>
-									</div>
-								</div>
-								<!-- /tab2  -->
+                    <!-- product tab content -->
+                    <div class="tab-content">
+                        <!-- tab1  -->
+                        <div id="tab1" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /tab1  -->
 
-								<!-- tab3  -->
-								<div id="tab3" class="tab-pane fade in">
-									<div class="row">
-										<!-- Rating -->
-										<div id="review_action" pid='<?php echo"$product_id"; ?>'></div>
-										
-										<!-- Review Form -->
-										<div class="col-md-3 mainn">
-											<div id="review-form">
-												<form class="review-form" onsubmit="return false" id="review_form" required>
-													<input class="input" type="text" name="name" placeholder="Your Name" required>
-													<input class="input" type="email" name="email" placeholder="Your Email" required>
-													<?php 
+                        <!-- tab2  -->
+                        <div id="tab2" class="tab-pane fade in">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /tab2  -->
+
+                        <!-- tab3  -->
+                        <div id="tab3" class="tab-pane fade in">
+                            <div class="row">
+                                <!-- Rating -->
+                                <div id="review_action" pid='<?php echo"$product_id"; ?>'></div>
+
+                                <!-- Review Form -->
+                                <div class="col-md-3 mainn">
+                                    <div id="review-form">
+                                        <form class="review-form" onsubmit="return false" id="review_form" required>
+                                            <input class="input" type="text" name="name" placeholder="Your Name"
+                                                required>
+                                            <input class="input" type="email" name="email" placeholder="Your Email"
+                                                required>
+                                            <?php 
 														$product_id = $_GET['p'];
 														echo'<input  name="product_id" value="'.$product_id.'" hidden required>'
 													?>
-													
-													<textarea class="input" name="review" placeholder="Your Review"></textarea>
-													<div class="input-rating">
-														<span>Your Rating: </span>
-														<div class="stars">
-															<input id="star5" name="rating" value="5" type="radio" required><label for="star5"></label>
-															<input id="star4" name="rating" value="4" type="radio" required><label for="star4"></label>
-															<input id="star3" name="rating" value="3" type="radio" required><label for="star3"></label>
-															<input id="star2" name="rating" value="2" type="radio" required><label for="star2"></label>
-															<input id="star1" name="rating" value="1" type="radio" required><label for="star1"></label>
-														</div>
-													</div>
-													<button class="primary-btn" name="review_submit">Submit</button>
-												</form>
-											</div>
-										</div>
-										<!-- /Review Form -->
-									</div>
-								</div>
-								<!-- /tab3  -->
-							</div>
-							<!-- /product tab content  -->
-						</div>
-					</div>
-					<!-- /product tab -->
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /SECTION -->
 
-		<!-- Section -->
-		<div class="section main main-raised">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-                    
-					<div class="col-md-12">
-						<div class="section-title text-center">
-							<h3 class="title">Related Products</h3>
-							
-						</div>
-					</div>
-                    
-								<?php
+                                            <textarea class="input" name="review" placeholder="Your Review"></textarea>
+                                            <div class="input-rating">
+                                                <span>Your Rating: </span>
+                                                <div class="stars">
+                                                    <input id="star5" name="rating" value="5" type="radio"
+                                                        required><label for="star5"></label>
+                                                    <input id="star4" name="rating" value="4" type="radio"
+                                                        required><label for="star4"></label>
+                                                    <input id="star3" name="rating" value="3" type="radio"
+                                                        required><label for="star3"></label>
+                                                    <input id="star2" name="rating" value="2" type="radio"
+                                                        required><label for="star2"></label>
+                                                    <input id="star1" name="rating" value="1" type="radio"
+                                                        required><label for="star1"></label>
+                                                </div>
+                                            </div>
+                                            <button class="primary-btn" name="review_submit">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- /Review Form -->
+                            </div>
+                        </div>
+                        <!-- /tab3  -->
+                    </div>
+                    <!-- /product tab content  -->
+                </div>
+            </div>
+            <!-- /product tab -->
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /SECTION -->
+
+<!-- Section -->
+<div class="section main main-raised">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h3 class="title">Related Products</h3>
+
+                </div>
+            </div>
+
+            <?php
                     include 'db.php';
 								$product_id = $_GET['p'];
                     
@@ -372,23 +389,23 @@ include "header.php";
       
 }
 ?>
-					<!-- product -->
-					
-					<!-- /product -->
+            <!-- product -->
 
-				</div>
-				<!-- /row -->
-                
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /Section -->
+            <!-- /product -->
 
-		<!-- NEWSLETTER -->
-		
-		<!-- /NEWSLETTER -->
+        </div>
+        <!-- /row -->
 
-		<!-- FOOTER -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /Section -->
+
+<!-- NEWSLETTER -->
+
+<!-- /NEWSLETTER -->
+
+<!-- FOOTER -->
 <?php
 include "newslettter.php";
 include "footer.php";

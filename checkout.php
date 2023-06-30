@@ -8,105 +8,110 @@ include "header.php";
 ?>
 
 <style>
-
 .row-checkout {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  margin: 0 -16px;
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
 }
 
 .col-25 {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
 }
 
 .col-50 {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
 }
 
 .col-75 {
-  -ms-flex: 75%; /* IE10 */
-  flex: 75%;
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%;
 }
 
 .col-25,
 .col-50,
 .col-75 {
-  padding: 0 16px;
+    padding: 0 16px;
 }
 
 .container-checkout {
-  background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
 }
 
 input[type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 label {
-  margin-bottom: 10px;
-  display: block;
+    margin-bottom: 10px;
+    display: block;
 }
 
 .icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
 }
 
 .checkout-btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
 }
 
 .checkout-btn:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 
 
 hr {
-  border: 1px solid lightgrey;
+    border: 1px solid lightgrey;
 }
 
 span.price {
-  float: right;
-  color: grey;
+    float: right;
+    color: grey;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
-  .row-checkout {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
+    .row-checkout {
+        flex-direction: column-reverse;
+    }
+
+    .col-25 {
+        margin-bottom: 20px;
+    }
 }
 </style>
 
-					
-<section class="section">       
-	<div class="container-fluid">
-		<div class="row-checkout">
-		<?php
+
+<section class="section">
+    <div class="container-fluid">
+        <div class="row-checkout">
+            <?php
 		if(isset($_SESSION["uid"])){
 			$sql = "SELECT * FROM user_info WHERE user_id='$_SESSION[uid]'";
 			$query = mysqli_query($con,$sql);
@@ -212,10 +217,10 @@ span.price {
 		}
 		?>
 
-			<div class="col-25">
-				<div class="container-checkout">
-				
-				<?php
+            <div class="col-25">
+                <div class="container-checkout">
+
+                    <?php
 				if (isset($_POST["cmd"])) {
 				
 					$user_id = $_POST['custom'];
@@ -272,11 +277,12 @@ span.price {
 					
 				}
 				?>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+<<<<<<< Updated upstream
 		<div id="newsletter" class="section">
 			<!-- container -->
 			<div class="container">
@@ -290,6 +296,21 @@ span.price {
 								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
 							</form>
 							<ul class="newsletter-follow">
+=======
+<div id="newsletter" class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="newsletter">
+                    <p>Đăng ký nhận chương trình <strong>KHUYẾN MÃI</strong></p>
+                    <form>
+                        <input class="input" type="email" placeholder="Enter Your Email">
+                        <button class="newsletter-btn"><i class="fa fa-envelope"></i> Đăng ký</button>
+                    </form>
+                    <!-- <ul class="newsletter-follow">
+>>>>>>> Stashed changes
 								<li>
 									<a href="#"><i class="fa fa-facebook"></i></a>
 								</li>
@@ -302,6 +323,7 @@ span.price {
 								<li>
 									<a href="#"><i class="fa fa-pinterest"></i></a>
 								</li>
+<<<<<<< Updated upstream
 							</ul>
 						</div>
 					</div>
@@ -311,6 +333,17 @@ span.price {
 			<!-- /container -->
 		</div>
 		
+=======
+							</ul> -->
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+
+>>>>>>> Stashed changes
 <?php
 include "footer.php";
 ?>
