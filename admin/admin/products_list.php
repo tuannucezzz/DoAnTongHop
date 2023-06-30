@@ -45,18 +45,18 @@ include "topheader.php";
          <div class="col-md-14">
             <div class="card ">
               <div class="card-header card-header-primary">
-                <h4 class="card-title"> Products List</h4>
+                <h4 class="card-title"> Danh sách sản phẩm</h4>
                 
               </div>
               <div class="card-body">
                 <div class="table-responsive ps">
                   <table class="table tablesorter " id="page1">
                     <thead class=" text-primary">
-                      <tr><th>Image</th><th>Name</th><th>Price</th><th>
+                      <tr><th>Ảnh</th><th>Tên sản phẩm</th><th>Đơn giá</th><th>
                       <?php
                       if ($_SESSION['role'] != 'e') {
                         echo'
-                            <a class=" btn btn-primary" href="add_products.php">Add New</a>
+                            <a class=" btn btn-primary" href="add_products.php">Thêm mới</a>
                         ';
                     
                       }
@@ -72,7 +72,7 @@ include "topheader.php";
                           $substr = substr($product_name,0,36);
                           // $price = round($price*0.014,2);
                         echo "<tr><td><img src='../../product_images/$image' style='width:50px; height:50px; border:groove #000'></td><td>$substr</td>
-                        <td>RS $price</td>
+                        <td>$price</td>
                         <td> ";
                     
                       if ($_SESSION['role'] != 'e') {
@@ -96,9 +96,9 @@ include "topheader.php";
             <nav aria-label="Page navigation example">
               <ul class="pagination">
                 <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
+                  <a class="page-link" href="#" aria-label="Trước">
                     <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
+                    <span class="sr-only">Trước</span>
                   </a>
                 </li>
                  <?php 
@@ -118,19 +118,14 @@ include "topheader.php";
 }
 ?>
                 <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
+                  <a class="page-link" href="#" aria-label="Sau">
                     <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
+                    <span class="sr-only">Sau</span>
                   </a>
                 </li>
               </ul>
             </nav>
-            
-           
-
           </div>
-          
-          
         </div>
       </div>
       <?php

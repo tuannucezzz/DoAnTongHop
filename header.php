@@ -144,9 +144,9 @@ session_start();
                                <div class="dropdownn">
                                   <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> HI '.$row["first_name"].'</a>
 								  <div class="dropdownn-content">
-								  	<a href="myorders.php"  ><i class="fa fa-shopping-basket" aria-hidden="true"></i>My Order</a>
-                                    <a href="" data-toggle="modal" data-target="#profile"><i class="fa fa-user-circle" aria-hidden="true" ></i>My Profile</a>
-                                    <a href="logout.php"  ><i class="fa fa-sign-in" aria-hidden="true"></i>Log out</a>
+								  	<a href="myorders.php"  ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Đơn đặt hàng</a>
+                                    <a href="" data-toggle="modal" data-target="#profile"><i class="fa fa-user-circle" aria-hidden="true" ></i>Thông tin</a>
+                                    <a href="logout.php"  ><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng xuất</a>
                                     
                                   </div>
                                 </div>';
@@ -154,11 +154,11 @@ session_start();
                             }else{ 
                                 echo '
                                 <div class="dropdownn">
-                                  <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> My Account</a>
+                                  <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> Tài khoản của tôi</a>
 								  <div class="dropdownn-content">
-								  	<a href="admin/login.php" ><i class="fa fa-user" aria-hidden="true" ></i>Admin</a>
-                                    <a href="signin_form.php"><i class="fa fa-sign-in" aria-hidden="true" ></i>Login</a>
-                                    <a href="signup_form.php"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a>
+								  	<a href="admin/login.php" ><i class="fa fa-user" aria-hidden="true" ></i>Quản trị</a>
+                                    <a href="signin_form.php"><i class="fa fa-sign-in" aria-hidden="true" ></i>Đăng nhập</a>
+                                    <a href="signup_form.php"><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng ký</a>
                                     
                                   </div>
                                 </div>';
@@ -180,12 +180,12 @@ session_start();
 				<!-- container -->
 				<div class="container">
 					<!-- row -->
-					<div class="row">
+					<div class="row header-nav">
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="#" class="logo">
-								<font style="font-style:normal; font-size: 33px;color: aliceblue;font-family: serif">
+								<a href="index.php" class="logo">
+								<font style="font-style:normal; font-size: 33px;color: aliceblue;font-family: serif;">
                                         HHT Shop
                                     </font>
 									
@@ -198,13 +198,13 @@ session_start();
 						<div class="col-md-6">
 							<div class="header-search">
 								<form onsubmit="return false" style="display: flex; justify-content: center;">
-									<select class="input-select" style="display: none;">
+									<!-- <select class="input-select" style="display: none;">
 										<option value="0">All Categories</option>
 										<option value="1">Men</option>
 										<option value="1">Women </option>
-									</select>
-									<input class="input" id="search" type="text" placeholder="Search here">
-									<button id="search_btn"   class="search-btn">Search</button>
+									</select> -->
+									<input class="input" id="search" type="text" placeholder="Nhập tìm kiếm">
+									<button id="search_btn"   class="search-btn">Tìm kiếm</button>
 								</form>
 							</div>
 						</div>
@@ -219,7 +219,7 @@ session_start();
 								<div>
 									<a href="wishlist.php">
 										<i class="fa fa-heart-o"></i>
-										<span>Your Wishlist</span>
+										<span>Yêu thích</span>
 										<div id="wishlist-badge" class="qty">0</div>
 									</a>
 								</div>
@@ -227,7 +227,7 @@ session_start();
 								<div class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fa fa-shopping-cart"></i>
-										<span>Your Cart</span>
+										<span>Giỏ hàng</span>
 										<div class="badge qty">0</div>
 									</a>
 									<div class="cart-dropdown"  >
@@ -237,7 +237,7 @@ session_start();
 										</div>
 										
 										<div class="cart-btns">
-												<a href="cart.php" style="width:100%;"><i class="fa fa-edit"></i>  edit cart</a>
+												<a href="cart.php" style="width:100%;"><i class="fa fa-edit"></i>  Thay đổi giỏ hàng</a>
 											
 										</div>
 									</div>

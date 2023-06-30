@@ -19,7 +19,7 @@ include "activitity.php";
             echo "<div class='col-md-12 col-xs-12' id='product_msg'>
           <div class='alert alert-success'>
             <a href='#'' class='close' data-dismiss='alert' aria-label='close'>×</a>
-            <b>Product is Added..!</b>
+            <b>Sản phẩm đã được thêm..!</b>
           </div>
         </div>";
             }
@@ -28,13 +28,13 @@ include "activitity.php";
                 <div class="col-md-14">
             <div class="card ">
               <div class="card-header card-header-primary">
-                <h4 class="card-title"> Users List</h4>
+                <h4 class="card-title"> Danh sách thành viên</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive ps">
                   <table class="table table-hover tablesorter " id="">
                     <thead class=" text-primary">
-                        <tr><th>ID</th><th>FirstName</th><th>LastName</th><th>Email</th><th>Password</th><th>Contact</th><th>Address</th><th>City</th>
+                        <tr><th>STT</th><th>Họ</th><th>Tên</th><th>Email</th><th>Mật khẩu</th><th>SĐT</th><th>Địa chỉ</th><th>Thành phố</th>
                     </tr></thead>
                     <tbody>
                       <?php 
@@ -57,13 +57,13 @@ include "activitity.php";
             <div class="col-md-6">
             <div class="card ">
               <div class="card-header card-header-primary">
-                <h4 class="card-title"> Categories List</h4>
+                <h4 class="card-title"> Danh sách phân loại</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive ps">
                   <table class="table table-hover tablesorter " id="">
                     <thead class=" text-primary">
-                        <tr><th>ID</th><th>Categories</th><th>Count</th>
+                        <tr><th>STT</th><th>Tên phân loại</th><th>Số lượng sản phẩm</th>
                     </tr></thead>
                     <tbody>
                       <?php 
@@ -90,13 +90,13 @@ include "activitity.php";
           <div class="col-md-6">
             <div class="card ">
               <div class="card-header card-header-primary">
-                <h4 class="card-title">Brands List</h4>
+                <h4 class="card-title">Danh sách hãng</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive ps">
                   <table class="table table-hover tablesorter " id="">
                     <thead class=" text-primary">
-                        <tr><th>ID</th><th>Brands</th><th>Count</th>
+                        <tr><th>STT</th><th>Tên hãng</th><th>Số lượng sản phẩm</th>
                     </tr></thead>
                     <tbody>
                       <?php 
@@ -125,13 +125,13 @@ include "activitity.php";
            <div class="col-md-5">
             <div class="card ">
               <div class="card-header card-header-primary">
-                <h4 class="card-title">Subscribers</h4>
+                <h4 class="card-title">Những người đăng ký</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive ps">
                   <table class="table table-hover tablesorter " id="">
                     <thead class=" text-primary">
-                        <tr><th>ID</th><th>email</th>
+                        <tr><th>STT</th><th>Email</th>
                     </tr></thead>
                     <tbody>
                       <?php 
@@ -150,9 +150,6 @@ include "activitity.php";
               </div>
             </div>
           </div>
-           
-            
-          
         </div>
       </div>
       <?php

@@ -35,13 +35,13 @@ include "topheader.php";
           <div class="col-md-14">
             <div class="card ">
               <div class="card-header card-header-primary">
-                <h4 class="card-title">sales / Page <?php echo $page;?> </h4>
+                <h4 class="card-title">Hóa đơn <?php echo $page;?> </h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive ps">
                   <table class="table table-hover tablesorter " id="">
                     <thead class=" text-primary">
-                      <tr><th>order_id</th><th>Products</th><th>Contact | Email</th><th>Address</th><th>amount</th><th>Quantity</th>
+                      <tr><th>STT</th><th>Sản phẩm</th><th>SĐT / Email</th><th>Địa chỉ</th><th>Số lượng</th><th>Tổng tiền</th>
                     </tr></thead>
                     <tbody>
                       <?php
@@ -77,15 +77,15 @@ include "topheader.php";
                             <?php }}?></td>
                             <td><?php echo $email ?></td>
                             <td><?php echo $address ?></td>
-                            <td><?php echo $total_amount ?></td>
                             <td><?php echo $qty ?></td>
+                            <td><?php echo $total_amount ?></td>
                          </tr>
                          <?php } ?>
                         
                     </tbody>
                      <?php
                    }else {
-                     echo "<center><h2>No users Available</h2><br><hr></center>";
+                     echo "<center><h2>Không có thành viên</h2><br><hr></center>";
                      }
                   ?>
                   </table>

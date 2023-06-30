@@ -87,6 +87,18 @@ ul, ol {
   list-style: none
 }
 
+img {
+  object-fit: contain;
+}
+
+.product-img {
+  background-color: #fff;
+}
+
+.product-name {
+  height: 30.78px;
+}
+
 /*----------------------------*\
 	Buttons
 \*----------------------------*/
@@ -494,6 +506,11 @@ textarea.input {
   background-image:  linear-gradient(-135deg, #FF6CAB 0%, #F660BC 10%, #EC53CD 20%, #E045DE 30%, #D335EE 40%, #C323FF 50%, #B53AFF 60%, #A749FF 70%, #9854FF 80%, #865EFF 90%, #7366FF 100%);
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   float: left;
 }
@@ -775,7 +792,7 @@ textarea.input {
   top: 0;
   bottom: 0;
   left: 0px;
-  width: 60%;
+  width: 20%;
   background: #12c2e9;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -833,18 +850,18 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 
 .shop .shop-body {
   position: absolute;
-  top: 0;
-  width: 75%;
-  padding: 30px;
+  top: -2px;
+  width: 60%;
+  padding: 8px;
   z-index: 10;
 }
 
 .shop .shop-body h3 {
-  color: #FFF;
+  color: #000;
 }
 
 .shop .shop-body .cta-btn {
-  color: #FFF;
+  color: #000;
   text-transform: uppercase;
 }
 

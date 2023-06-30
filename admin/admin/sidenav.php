@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        TechShop|Admin
+        HHT Shop|Admin
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
@@ -47,67 +47,48 @@
                     <li class="nav-item active  ">
                         <a class="nav-link" href="index.php">
                             <i class="material-icons">dashboard</i>
-                            <p>Dashboard</p>
+                            <p>Trang chủ</p>
                         </a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="addsuppliers.php">
                             <i class="material-icons">person</i>
-                            <p>Add users</p>
+                            <p>Thêm thành viên</p>
                         </a>
                         
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="add_products.php">
                         <i class="material-icons">add</i>
-                        <p>Add Products</p>
+                        <p>Thêm sản phẩm</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="products_list.php">
                         <i class="material-icons">list</i>
-                        <p>Product List</p>
+                        <p>Danh sách sản phẩm</p>
                         </a>
                         
                     </li>
                      <li class="nav-item ">
                         <a class="nav-link" href="manageuser.php">
                             <i class="material-icons">person</i>
-                            <p>Manage users</p>
+                            <p>Danh sách thành viên</p>
                         </a>
                     </li>
-                  <!--  <li class="nav-item ">
-            <a class="nav-link" href="activity.php">
-              <i class="material-icons">timeline</i>
-              <p>Activities</p>
-            </a>
-          </li> -->
                    
                     <li class="nav-item ">
                         <a class="nav-link" href="profile.php">
                             <icons-image _ngcontent-aye-c22="" _nghost-aye-c19=""><i _ngcontent-aye-c19="" class="material-icons icon-image-preview">settings</i></icons-image>
-                            <p>setting</p>
+                            <p>Cài đặt</p>
                         </a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="salesofday.php">
                             <i class="material-icons">library_books</i>
-                            <p>sales</p>
+                            <p>Hóa đơn</p>
                         </a>
                     </li>
-
-                   <!--   <li class="nav-item ">
-                        <a class="nav-link" href="../../chat/login.php">
-                            <i class="material-icons">notifications</i>
-                            <p>Discussion</p>
-                        </a>
-                    </li> -->
-                    <!-- <li class="nav-item active-pro ">
-                <a class="nav-link" href="./upgrade.html">
-                    <i class="material-icons">unarchive</i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li> -->
                 </ul>
             </div>
         </div>

@@ -19,16 +19,16 @@ if (isset($_POST['re_password']))
       {
         $pass = md5($re_pass);
       $update_pwd = mysqli_query($con,"UPDATE admin_info set admin_password='$pass' where admin_id='6'");
-      echo "<script>alert('Update Sucessfully'); </script>";
+      echo "<script>alert('Cập nhật thành công'); </script>";
       }
       else
       {
-      echo "<script>alert('Your new and Retype Password is not match'); </script>";
+      echo "<script>alert('Mật khẩu mới không trùng khớp'); </script>";
       }
     }
     else
     {
-    echo "<script>alert('Your old password is wrong'); </script>";
+    echo "<script>alert('Mật khẩu cũ không chính xác'); </script>";
     }
   }
  
@@ -43,8 +43,8 @@ include "topheader.php";
             <div class="col-md-8">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">Edit Profile</h4>
-                  <p class="card-category">Complete your profile</p>
+                  <h4 class="card-title">Sửa thông tin</h4>
+                  <p class="card-category">Hoàn thành thông tin của bạn</p>
                 </div>
                 <div class="card-body">
                   <form method="post" action="profile.php">
@@ -61,7 +61,7 @@ include "topheader.php";
                       </div>
                      <div class="col-md-4">
                         <div class="form-group bmd-form-group">
-                          <label class="bmd-label-floating">enter old password</label>
+                          <label class="bmd-label-floating">Nhập mật khẩu cũ</label>
                           <input type="text" class="form-control" name="old_pass" id="npwd">
                         </div>
                       </div>
@@ -69,19 +69,19 @@ include "topheader.php";
                   
                       <div class="col-md-4">
                         <div class="form-group bmd-form-group">
-                          <label class="bmd-label-floating">Change Password Here</label>
+                          <label class="bmd-label-floating">Nhập mật khẩu mới</label>
                           <input type="text" class="form-control" name="new_pass" id="npwd">
                         </div>
                       </div>
                      
                       <div class="col-md-4">
                         <div class="form-group bmd-form-group">
-                          <label class="bmd-label-floating">confirm Password Here</label>
+                          <label class="bmd-label-floating">Nhập lại mật khẩu mới</label>
                           <input type="text" class="form-control" name="re_pass" id="npwd">
                         </div>
                       </div>
                
-                    <button class="btn btn-primary pull-right" type="submit" name="re_password">Update Profile</button>
+                    <button class="btn btn-primary pull-right" type="submit" name="re_password">Cập nhật</button>
                    
                     <div class="clearfix"></div>
                   </form>
