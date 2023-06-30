@@ -4,7 +4,7 @@ include "db.php";
 include "header.php";
 
 
-                         
+
 ?>
 
 <style>
@@ -112,12 +112,12 @@ span.price {
     <div class="container-fluid">
         <div class="row-checkout">
             <?php
-		if(isset($_SESSION["uid"])){
-			$sql = "SELECT * FROM user_info WHERE user_id='$_SESSION[uid]'";
-			$query = mysqli_query($con,$sql);
-			$row=mysqli_fetch_array($query);
-		
-		echo'
+			if (isset($_SESSION["uid"])) {
+				$sql = "SELECT * FROM user_info WHERE user_id='$_SESSION[uid]'";
+				$query = mysqli_query($con, $sql);
+				$row = mysqli_fetch_array($query);
+
+				echo '
 			<div class="col-75">
 				<div class="container-checkout">
 				<form id="checkout_form" action="checkout_process.php" method="POST" class="was-validated">
@@ -127,13 +127,13 @@ span.price {
 					<div class="col-50">
 						<h3>Billing Address</h3>
 						<label for="fname"><i class="fa fa-user" ></i> Full Name</label>
-						<input type="text" id="fname" class="form-control" name="firstname" pattern="^[a-zA-Z ]+$"  value="'.$row["first_name"].' '.$row["last_name"].'">
+						<input type="text" id="fname" class="form-control" name="firstname" pattern="^[a-zA-Z ]+$"  value="' . $row["first_name"] . ' ' . $row["last_name"] . '">
 						<label for="email"><i class="fa fa-envelope"></i> Email</label>
-						<input type="text" id="email" name="email" class="form-control" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$" value="'.$row["email"].'" required>
+						<input type="text" id="email" name="email" class="form-control" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$" value="' . $row["email"] . '" required>
 						<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-						<input type="text" id="adr" name="address" class="form-control" value="'.$row["address1"].'" required>
+						<input type="text" id="adr" name="address" class="form-control" value="' . $row["address1"] . '" required>
 						<label for="city"><i class="fa fa-institution"></i> City</label>
-						<input type="text" id="city" name="city" class="form-control" value="'.$row["address2"].'" pattern="^[a-zA-Z ]+$" required>
+						<input type="text" id="city" name="city" class="form-control" value="' . $row["address2"] . '" pattern="^[a-zA-Z ]+$" required>
 
 						<div class="row">
 						<div class="col-50">
@@ -183,52 +183,52 @@ span.price {
 					</div>
 					<label><input type="CHECKBOX" name="q" class="roomselect" value="conform" required> Shipping address same as billing
 					</label>';
-					$i=1;
-					$total=0;
-					$total_count=$_POST['total_count'];
-					while($i<=$total_count){
-						$item_name_ = $_POST['item_name_'.$i];
-						$amount_ = $_POST['amount_'.$i];
-						$quantity_ = $_POST['quantity_'.$i];
-						$total=$total+$amount_ ;
-						$sql = "SELECT product_id FROM products WHERE product_title='$item_name_'";
-						$query = mysqli_query($con,$sql);
-						$row=mysqli_fetch_array($query);
-						$product_id=$row["product_id"];
-						echo "	
+				$i = 1;
+				$total = 0;
+				$total_count = $_POST['total_count'];
+				while ($i <= $total_count) {
+					$item_name_ = $_POST['item_name_' . $i];
+					$amount_ = $_POST['amount_' . $i];
+					$quantity_ = $_POST['quantity_' . $i];
+					$total = $total + $amount_;
+					$sql = "SELECT product_id FROM products WHERE product_title='$item_name_'";
+					$query = mysqli_query($con, $sql);
+					$row = mysqli_fetch_array($query);
+					$product_id = $row["product_id"];
+					echo "	
 						<input type='hidden' name='prod_id_$i' value='$product_id'>
 						<input type='hidden' name='prod_price_$i' value='$amount_'>
 						<input type='hidden' name='prod_qty_$i' value='$quantity_'>
 						";
-						$i++;
-					}
-					
-				echo'	
-				<input type="hidden" name="total_count" value="'.$total_count.'">
-					<input type="hidden" name="total_price" value="'.$total.'">
+					$i++;
+				}
+
+				echo '	
+				<input type="hidden" name="total_count" value="' . $total_count . '">
+					<input type="hidden" name="total_price" value="' . $total . '">
 					
 					<input type="submit" id="submit" value="Continue to checkout" class="checkout-btn">
 				</form>
 				</div>
 			</div>
 			';
-		}else{
-			echo"<script>window.location.href = 'cart.php'</script>";
-		}
-		?>
+			} else {
+				echo "<script>window.location.href = 'cart.php'</script>";
+			}
+			?>
 
             <div class="col-25">
                 <div class="container-checkout">
 
                     <?php
-				if (isset($_POST["cmd"])) {
-				
-					$user_id = $_POST['custom'];
-					
-					
-					$i=1;
-					echo
-					"
+					if (isset($_POST["cmd"])) {
+
+						$user_id = $_POST['custom'];
+
+
+						$i = 1;
+						echo
+						"
 					<h4>Cart 
 					<span class='price' style='color:black'>
 					<i class='fa fa-shopping-cart'></i> 
@@ -245,58 +245,43 @@ span.price {
 					</thead>
 					<tbody>
 					";
-					$total=0;
-					while($i<=$total_count){
-						$item_name_ = $_POST['item_name_'.$i];
-						
-						$item_number_ = $_POST['item_number_'.$i];
-						
-						$amount_ = $_POST['amount_'.$i];
-						
-						$quantity_ = $_POST['quantity_'.$i];
-						$total=$total+$amount_ ;
-						$sql = "SELECT product_id FROM products WHERE product_title='$item_name_'";
-						$query = mysqli_query($con,$sql);
-						$row=mysqli_fetch_array($query);
-						$product_id=$row["product_id"];
-					
-						echo "	
+						$total = 0;
+						while ($i <= $total_count) {
+							$item_name_ = $_POST['item_name_' . $i];
+
+							$item_number_ = $_POST['item_number_' . $i];
+
+							$amount_ = $_POST['amount_' . $i];
+
+							$quantity_ = $_POST['quantity_' . $i];
+							$total = $total + $amount_;
+							$sql = "SELECT product_id FROM products WHERE product_title='$item_name_'";
+							$query = mysqli_query($con, $sql);
+							$row = mysqli_fetch_array($query);
+							$product_id = $row["product_id"];
+
+							echo "	
 
 						<tr><td><p>$item_number_</p></td><td><p>$item_name_</p></td><td ><p>$quantity_</p></td><td ><p>$amount_</p></td></tr>";
-						
-						$i++;
-					}
 
-				echo"
+							$i++;
+						}
+
+						echo "
 
 				</tbody>
 				</table>
 				<hr>
 				
 				<h3>total<span class='price' style='color:black'><b>$$total</b></span></h3>";
-					
-				}
-				?>
+					}
+					?>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<<<<<<< Updated upstream
-		<div id="newsletter" class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="newsletter">
-							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
-							<form >
-								<input class="input" type="email" placeholder="Enter Your Email">
-								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-							</form>
-							<ul class="newsletter-follow">
-=======
+
 <div id="newsletter" class="section">
     <!-- container -->
     <div class="container">
@@ -310,7 +295,6 @@ span.price {
                         <button class="newsletter-btn"><i class="fa fa-envelope"></i> Đăng ký</button>
                     </form>
                     <!-- <ul class="newsletter-follow">
->>>>>>> Stashed changes
 								<li>
 									<a href="#"><i class="fa fa-facebook"></i></a>
 								</li>
@@ -323,27 +307,15 @@ span.price {
 								<li>
 									<a href="#"><i class="fa fa-pinterest"></i></a>
 								</li>
-<<<<<<< Updated upstream
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		
-=======
-							</ul> -->
+
                 </div>
             </div>
         </div>
-        <!-- /row -->
-    </div>
-    <!-- /container -->
-</div>
+        <!- /row -->
+                </div>
+                <!-- /container -->
+            </div>
 
->>>>>>> Stashed changes
-<?php
-include "footer.php";
-?>
+            <?php
+			include "footer.php";
+			?>

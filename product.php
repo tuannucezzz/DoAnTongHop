@@ -130,7 +130,7 @@ jQuery(document).ready(function($) {
 										
 									</div>
 									<div>
-										<h3 class="product-price">$'.$row['product_price'].'<del class="product-old-price">$990.00</del></h3>
+										<h3 class="product-price">$'.number_format($row['product_price'], 0, '', ',').'Đ'.'<del class="product-old-price">92,849,999Đ</del></h3>
 										<span class="product-available">In Stock</span>
 									</div>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -347,7 +347,7 @@ jQuery(document).ready(function($) {
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>$990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>92,849,999Đ</del></h4>
 										<div class='product-rating'>";
 										$rating_query = "SELECT ROUND(AVG(rating),1) AS avg_rating  FROM reviews WHERE product_id='$pro_id '";
 										$run_review_query = mysqli_query($con,$rating_query);

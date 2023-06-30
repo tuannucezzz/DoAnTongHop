@@ -137,10 +137,10 @@ white-space: nowrap;
 							<div class="footer">
 								<h3 class="footer-title">Categories</h3>
 								<ul class="footer-links">
-									<li><a href="#">Laptop Gamming</a></li>
-									<li><a href="#">Laptop Học tập, Văn phòng</a></li>
-									<li><a href="#">Laptop Đồ họa</a></li>
-									<li><a href="#">Laptop Mỏng nhẹ</a></li>
+									<li><a href="products.php?cat_id=1">Laptop Gamming</a></li>
+									<li><a href="products.php?cat_id=2">Laptop Học tập, Văn phòng</a></li>
+									<li><a href="products.php?cat_id=3">Laptop Đồ họa</a></li>
+									<li><a href="products.php?cat_id=4">Laptop Mỏng nhẹ</a></li>
 								</ul>
 							</div>
 						</div>

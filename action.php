@@ -443,17 +443,12 @@ if (isset($_POST["Common"])) {
 												
 											</div>';
 			}
-<<<<<<< Updated upstream
+
             
             echo '<div class="cart-summary">
 				    <small class="qty">'.$n.' Item(s) selected</small>
 				    <h5>Rs'.$total_price.'</h5>
-=======
 
-			echo '<div class="cart-summary">
-				    <small class="qty">' . $n . ' Item(s) selected</small>
-				    <h5>' . $total_price . '</h5>
->>>>>>> Stashed changes
 				</div>'
 ?>
 
