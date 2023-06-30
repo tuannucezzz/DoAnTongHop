@@ -130,54 +130,55 @@ include "header.php";
 										
 									</div>
 									<div>
-										<h3 class="product-price">$'.number_format($row['product_price'], 0, '', ',').'Đ'.'<del class="product-old-price">92,849,999Đ</del></h3>
-										<span class="product-available">In Stock</span>
+										<h3 class="product-price">'.number_format($row['product_price'], 0, '', ',').'Đ'.'<del class="product-old-price">92,849,999Đ</del></h3>
+										<span class="product-available">Còn hàng</span>
 									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<p>Laptop thế hệ mới mang đam mê của bạn bắt nhịp với lối sống năng động. Dù là đang làm việc hay sử dụng trên giảng đường, vi xử lí Intel Core Tiger Lake thế hệ 11 mới nhất và card đồ họa tích hợp Modern series cũng sẽ đáp ứng mọi nhu cầu của bạn.</p>
 
 									<div class="product-options">
 										<label>
-											Size
+											Ổ cứng
 											<select class="input-select">
-												<option value="0">X</option>
+												<option value="0">512GB </option>
+												<option value="1">1024GB </option>
 											</select>
 										</label>
 										<label>
-											Color
+											Màu sắc
 											<select class="input-select">
-												<option value="0">Red</option>
+												<option value="0">Đỏ</option>
 											</select>
 										</label>
 									</div>
 
 									<div class="add-to-cart">
 										<div class="qty-label">
-											Qty
+											Số lượng
 											<div class="input-number">
-												
+												<input type="number" value="1" />
 												<span class="qty-up">+</span>
 												<span class="qty-down">-</span>
 											</div>
 										</div>
 										<div class="btn-group" style="margin-left: 25px; margin-top: 15px">
-										<button class="add-to-cart-btn" pid="'.$row['product_id'].'"  id="product" ><i class="fa fa-shopping-cart"></i> add to cart</button>
+										<button class="add-to-cart-btn" pid="'.$row['product_id'].'"  id="product" ><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
 										</div>
 										
 										
 									</div>
 
 									<ul class="product-btns">
-										<li><a href="#" pid="'.$row['product_id'].'"  id="wishlist" ><i class="fa fa-heart-o"></i> add to wishlist</a></li>
-										<li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
+										<li><a href="#" pid="'.$row['product_id'].'"  id="wishlist" ><i class="fa fa-heart-o"></i> Thêm vào danh sách yêu thích</a></li>
+										<li><a href="#"><i class="fa fa-exchange"></i> So sánh</a></li>
 									</ul>
 
 									<ul class="product-links">
-										<li>Category:</li>
+										<li>Loại:</li>
 										<li><a href="#">'.$row["cat_title"].'</a></li>
 									</ul>
 
 									<ul class="product-links">
-										<li>Share:</li>
+										<li>Chia sẻ:</li>
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -219,7 +220,7 @@ include "header.php";
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="row">
 										<div class="col-md-12">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											<p>Laptop thế hệ mới mang đam mê của bạn bắt nhịp với lối sống năng động. Dù là đang làm việc hay sử dụng trên giảng đường, vi xử lí Intel Core Tiger Lake thế hệ 11 mới nhất và card đồ họa tích hợp Modern series cũng sẽ đáp ứng mọi nhu cầu của bạn.</p>
 										</div>
 									</div>
 								</div>
@@ -229,7 +230,7 @@ include "header.php";
 								<div id="tab2" class="tab-pane fade in">
 									<div class="row">
 										<div class="col-md-12">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											<p>Laptop thế hệ mới mang đam mê của bạn bắt nhịp với lối sống năng động. Dù là đang làm việc hay sử dụng trên giảng đường, vi xử lí Intel Core Tiger Lake thế hệ 11 mới nhất và card đồ họa tích hợp Modern series cũng sẽ đáp ứng mọi nhu cầu của bạn.</p>
 										</div>
 									</div>
 								</div>
@@ -245,14 +246,14 @@ include "header.php";
 										<div class="col-md-3 mainn">
 											<div id="review-form">
 												<form class="review-form" onsubmit="return false" id="review_form" required>
-													<input class="input" type="text" name="name" placeholder="Your Name" required>
-													<input class="input" type="email" name="email" placeholder="Your Email" required>
+													<input class="input" type="text" name="name" placeholder="Nhập tên" required>
+													<input class="input" type="email" name="email" placeholder="Nhập email" required>
 													<?php 
 														$product_id = $_GET['p'];
 														echo'<input  name="product_id" value="'.$product_id.'" hidden required>'
 													?>
 													
-													<textarea class="input" name="review" placeholder="Your Review"></textarea>
+													<textarea class="input" name="review" placeholder="Nhập đánh giá"></textarea>
 													<div class="input-rating">
 														<span>Your Rating: </span>
 														<div class="stars">
@@ -292,7 +293,7 @@ include "header.php";
                     
 					<div class="col-md-12">
 						<div class="section-title text-center">
-							<h3 class="title">Related Products</h3>
+							<h3 class="title">Các sản phẩm cùng phân khúc</h3>
 							
 						</div>
 					</div>
