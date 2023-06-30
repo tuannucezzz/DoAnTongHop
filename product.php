@@ -198,8 +198,8 @@ include "header.php";
 						<div id="product-tab">
 							<!-- product tab nav -->
 							<ul class="tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
-								<li><a data-toggle="tab" href="#tab2">Details</a></li>
+								<li class="active"><a data-toggle="tab" href="#tab1">Mô tả</a></li>
+								<li><a data-toggle="tab" href="#tab2">Chi tiết</a></li>
 								<?php
 												include 'db.php';
 												$product_id = $_GET['p'];
@@ -208,7 +208,7 @@ include "header.php";
 												$run_query = mysqli_query($con,$product_query);
 												$row = mysqli_fetch_array($run_query);
 												$reviews_count=$row["count"];
-												echo '<li><a data-toggle="tab" href="#tab3">Reviews ('.$reviews_count.')</a></li>';
+												echo '<li><a data-toggle="tab" href="#tab3">Đánh giá ('.$reviews_count.')</a></li>';
 								?>
 								
 							</ul>
