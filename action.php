@@ -28,7 +28,7 @@ if (isset($_POST["category"])) {
 			$i++;
 			echo "
 					
-                    <div type='button' class='btn navbar-btn category' cid='$cid'>
+                    <div type='button' class='btn navbar-btn category' cid='$cid' style='text-align:left'>
 									
 									<a href='#'>
 										<span  ></span>
@@ -62,7 +62,7 @@ if (isset($_POST["brand"])) {
 			$count = $row["count_items"];
 			$i++;
 			echo "
-                    <div type='button' class='btn navbar-btn selectBrand' bid='$bid'>
+                    <div type='button' class='btn navbar-btn selectBrand' bid='$bid' style='text-align: left'>
 									
 									<a href='#'>
 										<span ></span>

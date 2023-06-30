@@ -270,14 +270,12 @@ session_start();
 				<!-- <div id="responsive-nav">
 						
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="index.php">Home</a></li>
-						<li class="category" cid="1"><a href="store.php">Electronics</a></li>
-						<li class="category" cid="2"><a href="store.php">Ladies Wears</a></li>
-						<li class="category" cid="3"><a href="store.php">Mens Wear</a></li>
-						<li class="category" cid="4"><a href="store.php">Kids Wear</a></li>
-						<li class="category" cid="5"><a href="store.php">Furnitures</a></li>
-						<li class="category" cid="6"><a href="store.php">Home Appliances</a></li>
-						<li class="category" cid="7"><a href="store.php">Electronics Gadgets</a></li>
+						<li class="active"><a href="index.php">Trang chủ</a></li>
+						<li class="category" cid="1"><a href="store.php">Laptop Gaming</a></li>
+						<li class="category" cid="2"><a href="store.php">Laptop Học tập, Văn phòng</a></li>
+						<li class="category" cid="3"><a href="store.php">Laptop Đồ họa</a></li>
+						<li class="category" cid="4"><a href="store.php">Laptop Mỏng nhẹ</a></li>
+
 					
 					</ul>
 						

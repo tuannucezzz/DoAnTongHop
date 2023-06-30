@@ -17,8 +17,8 @@ include 'header.php';
                     <!-- /aside Widget -->
 
                     <!-- aside Widget -->
-                    <div class="aside">
-                        <h3 class="aside-title">Price</h3>
+                    <!-- <div class="aside">
+                        <h3 class="aside-title">Giá</h3>
                         <div class="price-filter">
                             <div id="price-slider" class="noUi-target noUi-ltr noUi-horizontal">
                                 <div class="noUi-base">
@@ -49,7 +49,7 @@ include 'header.php';
                                 <span class="qty-down">-</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /aside Widget -->
 
                     <!-- aside Widget -->
@@ -114,7 +114,7 @@ include 'header.php';
                     <!-- store bottom filter -->
                     <div class="store-filter clearfix">
                         <span class="store-qty">Showing 20-100 products</span>
-                        <ul class="store-pagination" id="pageno">
+                        <ul class="store-pagination" id="pageno" cid=<?php echo "$cat_id"; ?>>
                             <li><a class="active" href="#aside">1</a></li>
 
                             <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
