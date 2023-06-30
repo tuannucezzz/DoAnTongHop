@@ -57,7 +57,8 @@
                             </div>
                             <div class="shop-body">
                                 <h3>Laptop<br>Gaming</h3>
-                                <a href="products.php?cat_id=1" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+                                <a href="products.php?cat_id=1" class="cta-btn">Shop now <i
+                                        class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
                     </a>
@@ -73,7 +74,8 @@
                             </div>
                             <div class="shop-body">
                                 <h3>Laptop<br>Văn Phòng</h3>
-                                <a href="products.php?cat_id=2" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+                                <a href="products.php?cat_id=2" class="cta-btn">Shop now <i
+                                        class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
                     </a>
@@ -89,7 +91,8 @@
                             </div>
                             <div class="shop-body">
                                 <h3>Laptop<br>Đồ Họa</h3>
-                                <a href="products.php?cat_id=3" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+                                <a href="products.php?cat_id=3" class="cta-btn">Shop now <i
+                                        class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
                     </a>
@@ -102,7 +105,8 @@
                             </div>
                             <div class="shop-body">
                                 <h3>Laptop<br>Mỏng nhẹ</h3>
-                                <a href="products.php?cat_id=4" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+                                <a href="products.php?cat_id=4" class="cta-btn">Shop now <i
+                                        class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
                     </a>
@@ -127,7 +131,7 @@
                 <!-- section title -->
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h3 class="title">New Products</h3>
+                        <h3 class="title">Sản phẩm mới nhất</h3>
                         <div class="section-nav">
                             <!-- <ul class="section-tab-nav tab-nav">
 									<li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
@@ -254,31 +258,31 @@
                         <li>
                             <div>
                                 <h3>02</h3>
-                                <span>Days</span>
+                                <span>Ngày</span>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <h3>10</h3>
-                                <span>Hours</span>
+                                <span>Giờ</span>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <h3>34</h3>
-                                <span>Mins</span>
+                                <span>Phút</span>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <h3>60</h3>
-                                <span>Secs</span>
+                                <span>Giây</span>
                             </div>
                         </li>
                     </ul>
-                    <h2 class="text-uppercase">hot deal this week</h2>
-                    <p>New Collection Up to 50% OFF</p>
-                    <a class="primary-btn cta-btn" href="store.php">Shop now</a>
+                    <h2 class="text-uppercase">Giảm giá sâu trong tuần</h2>
+                    <p>Sản phẩm mới giảm giá 20% </p>
+                    <a class="primary-btn cta-btn" href="store.php">click here</a>
                 </div>
             </div>
         </div>
@@ -299,7 +303,7 @@
             <!-- section title -->
             <div class="col-md-12">
                 <div class="section-title">
-                    <h3 class="title">Top selling</h3>
+                    <h3 class="title">Sản phẩm bán chạy</h3>
                     <div class="section-nav">
                         <!-- <ul class="section-tab-nav tab-nav">
 									<li class="active"><a data-toggle="tab" href="#tab2">Formals</a></li>
@@ -417,7 +421,7 @@
         <div class="row">
             <div class="col-md-4 col-xs-6">
                 <div class="section-title">
-                    <h4 class="title">Top selling</h4>
+                    <h4 class="title">Sản phẩm bán chạy</h4>
                     <div class="section-nav">
                         <div id="slick-nav-3" class="products-slick-nav"></div>
                     </div>
@@ -438,8 +442,8 @@
                                 <img src="./product_images/acer1.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">62,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -452,8 +456,8 @@
                                 <img src="./product_images/acer2.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">68,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -466,8 +470,8 @@
                                 <img src="./product_images/acer3.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">54,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -479,7 +483,7 @@
 
             <div class="col-md-4 col-xs-6">
                 <div class="section-title">
-                    <h4 class="title">Top selling</h4>
+                    <h4 class="title">Sản phẩm bán chạy</h4>
                     <div class="section-nav">
                         <div id="slick-nav-4" class="products-slick-nav"></div>
                     </div>
@@ -493,8 +497,8 @@
                                 <img src="./product_images/alienware1.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">20,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -507,8 +511,8 @@
                                 <img src="./product_images/alienware2.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">20,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -521,8 +525,8 @@
                                 <img src="./product_images/alienware3.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">24,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -537,8 +541,8 @@
                                 <img src="./product_images/samsung1.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">52,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -551,8 +555,8 @@
                                 <img src="./product_images/samsung2.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">22,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -565,8 +569,8 @@
                                 <img src="./product_images/samsung3.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">12,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -582,7 +586,7 @@
 
             <div class="col-md-4 col-xs-6">
                 <div class="section-title">
-                    <h4 class="title">Top selling</h4>
+                    <h4 class="title">Sản phẩm bán chạy</h4>
                     <div class="section-nav">
                         <div id="slick-nav-5" class="products-slick-nav"></div>
                     </div>
@@ -596,8 +600,8 @@
                                 <img src="./product_images/apple1.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">20,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -610,8 +614,8 @@
                                 <img src="./product_images/apple2.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">25,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -624,8 +628,8 @@
                                 <img src="./product_images/apple3.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">22,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -640,8 +644,8 @@
                                 <img src="./product_images/alienware1.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">20,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -655,8 +659,8 @@
                                 <img src="./product_images/alienware2.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">32,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
@@ -669,8 +673,8 @@
                                 <img src="./product_images/alienware3.png" alt="">
                             </div>
                             <div class="product-body">
-                                <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <p class="product-category">Loại sản phẩm</p>
+                                <h3 class="product-name"><a href="#">tên sản phẩm </a></h3>
                                 <h4 class="product-price">28,849,000Đ <del class="product-old-price">92,849,000Đ</del>
                                 </h4>
                             </div>
