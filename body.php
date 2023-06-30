@@ -57,7 +57,7 @@
                             </div>
                             <div class="shop-body">
                                 <h3>Laptop<br>Gaming</h3>
-                                <a href="products.php?cat_id=1" class="cta-btn">Shop now <i
+                                <a href="products.php?cat_id=1" class="cta-btn">Mua ngay <i
                                         class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                             </div>
                             <div class="shop-body">
                                 <h3>Laptop<br>Văn Phòng</h3>
-                                <a href="products.php?cat_id=2" class="cta-btn">Shop now <i
+                                <a href="products.php?cat_id=2" class="cta-btn">Mua ngay <i
                                         class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                             </div>
                             <div class="shop-body">
                                 <h3>Laptop<br>Đồ Họa</h3>
-                                <a href="products.php?cat_id=3" class="cta-btn">Shop now <i
+                                <a href="products.php?cat_id=3" class="cta-btn">Mua ngay <i
                                         class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                             </div>
                             <div class="shop-body">
                                 <h3>Laptop<br>Mỏng nhẹ</h3>
-                                <a href="products.php?cat_id=4" class="cta-btn">Shop now <i
+                                <a href="products.php?cat_id=4" class="cta-btn">Mua ngay <i
                                         class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
@@ -208,13 +208,13 @@
                                             }
                                             echo "</div>
 										<div class='product-btns'>
-											<button pid='$pro_id' id='wishlist' class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
+											<button pid='$pro_id' id='wishlist' class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>Thêm vào danh sách ưa thích</span></button>
+											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>So sánh</span></button>
+											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>Xem nhanh</span></button>
 										</div>
 									</div>
 									<div class='add-to-cart'>
-										<button pid='$pro_id' id='product' class='add-to-cart-btn block2-btn-towishlist' href='#'><i class='fa fa-shopping-cart'></i> add to cart</button>
+										<button pid='$pro_id' id='product' class='add-to-cart-btn block2-btn-towishlist' href='#'><i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng</button>
 									</div>
 								</div>
                                
@@ -282,7 +282,7 @@
                     </ul>
                     <h2 class="text-uppercase">Giảm giá sâu trong tuần</h2>
                     <p>Sản phẩm mới giảm giá 20% </p>
-                    <a class="primary-btn cta-btn" href="store.php">click here</a>
+                    <a class="primary-btn cta-btn" href="store.php">Nhấn vào đây</a>
                 </div>
             </div>
         </div>
@@ -380,13 +380,13 @@
                                         }
                                         echo "</div>
 										<div class='product-btns'>
-											<button pid='$pro_id' id='wishlist' class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
+											<button pid='$pro_id' id='wishlist' class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>Thêm vào danh sách ưa thích</span></button>
+											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>So sánh</span></button>
+											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>Xem nhanh</span></button>
 										</div>
 									</div>
 									<div class='add-to-cart'>
-										<button pid='$pro_id' id='product' class='add-to-cart-btn block2-btn-towishlist' href='#'><i class='fa fa-shopping-cart'></i> add to cart</button>
+										<button pid='$pro_id' id='product' class='add-to-cart-btn block2-btn-towishlist' href='#'><i class='fa fa-shopping-cart'></i> Thêm vào giỏ hàng</button>
 									</div>
 								</div>
                                
