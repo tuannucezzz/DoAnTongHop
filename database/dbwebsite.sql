@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 18, 2023 at 04:25 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.0.25
+-- Generation Time: Jul 04, 2023 at 11:11 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -98,7 +98,16 @@ CREATE TABLE `cart` (
 INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `qty`) VALUES
 (272, 72, '::1', 12, 1),
 (281, 1, '::1', 12, 1),
-(282, 8, '::1', 12, 3);
+(282, 8, '::1', 12, 3),
+(289, 17, '', 26, 1),
+(290, 4, '', 26, 1),
+(294, 4, '', 31, 1),
+(309, 4, '', 30, 1),
+(310, 5, '', 30, 1),
+(311, 6, '', 30, 1),
+(315, 4, '', 32, 1),
+(316, 71, '', 32, 1),
+(317, 72, '', 32, 1);
 
 -- --------------------------------------------------------
 
@@ -119,7 +128,7 @@ INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
 (1, 'Laptop Gaming'),
 (2, 'Laptop Học tập, Văn phòng'),
 (3, 'Laptop Đồ họa'),
-(4, 'LapTop Mỏng nhẹ');
+(4, 'Laptop Mỏng nhẹ');
 
 -- --------------------------------------------------------
 
@@ -139,7 +148,9 @@ CREATE TABLE `email_info` (
 INSERT INTO `email_info` (`email_id`, `email`) VALUES
 (3, 'admin@gmail.com'),
 (4, 'puneethreddy951@gmail.com'),
-(5, 'supportreddy@gmail.com');
+(5, 'supportreddy@gmail.com'),
+(6, 'vantuan100301@gmail.com'),
+(7, 'ntson230801@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -205,7 +216,16 @@ CREATE TABLE `orders_info` (
 --
 
 INSERT INTO `orders_info` (`order_id`, `user_id`, `f_name`, `email`, `address`, `city`, `state`, `zip`, `cardname`, `cardnumber`, `expdate`, `prod_count`, `total_amt`, `cvv`) VALUES
-(1, 12, 'support', 'puneethreddy951@gmail.com', 'New York, Kumbalagodu, Karnataka', 'New York', 'Karnataka', 560074, 'pokjhgfcxc', '4321 2345 6788 7654', '12/90', 3, 77000, 1234);
+(1, 12, 'support', 'puneethreddy951@gmail.com', 'New York, Kumbalagodu, Karnataka', 'New York', 'Karnataka', 560074, 'pokjhgfcxc', '4321 2345 6788 7654', '12/90', 3, 77000, 1234),
+(5, 26, 'Hieu Trinh', 'byn1612@gmail.com', 'VietNam', 'HaNoi', 'abc', 560074, 'DONG VAN TUAN', '1232312312312312', '08/19', 1, 196678000, 4324),
+(6, 26, 'Hieu Trinh', 'byn1612@gmail.com', 'VietNam', 'HaNoi', 'abc', 560074, 'sdfsdf', '3434 342343 42342', '08/19', 1, 19799000, 1231),
+(7, 26, 'Hieu Trinh', 'byn1612@gmail.com', 'VietNam', 'HaNoi', 'abc', 560074, 'DONG VAN TUAN', '1232312312312312', '12/12', 1, 19049000, 2312),
+(8, 30, 'Dong Van Tuan', 'vantuan100301@gmail.com', 'Vu Thuong', 'Ha Noi', 'Viet Nam', 100000, 'DONG VAN TUAN', '162537836237823', '08/19', 2, 57598000, 111),
+(9, 30, 'Dong Van Tuan', 'vantuan100301@gmail.com', 'Vu Thuong', 'HaNoi', 'VN', 560074, 'DONG VAN TUAN', '1524153616341733', '08/19', 1, 39000000, 111),
+(10, 30, 'Dong Van Tuan', 'vantuan100301@gmail.com', 'Vu Thuong', 'HaNoi', 'dfgdfg', 560074, 'DONG VAN TUAN', '26363636363636', '08/19', 1, 44990000, 111),
+(11, 30, 'Dong Van Tuan', 'vantuan100301@gmail.com', 'Vu Thuong', 'HaNoi', 'Viet Nam', 560074, 'DONG VAN TUAN', '2786423434234', '08/19', 1, 44990000, 111),
+(12, 30, 'Dong Van Tuan', 'vantuan100301@gmail.com', 'Vu Thuong', 'HaNoi', 'Vie', 560074, 'DONG VAN TUAN', '78364823746823', '08/19', 1, 37799000, 111),
+(13, 30, 'Dong Van Tuan', 'vantuan100301@gmail.com', 'Vu Thuong', 'HaNoi', 'Viet Nam', 560074, 'DONG VAN TUAN', '2423423423423', '08/19', 1, 44990000, 123);
 
 -- --------------------------------------------------------
 
@@ -228,7 +248,17 @@ CREATE TABLE `order_products` (
 INSERT INTO `order_products` (`order_pro_id`, `order_id`, `product_id`, `qty`, `amt`) VALUES
 (73, 1, 1, 1, 5000),
 (74, 1, 4, 2, 64000),
-(75, 1, 8, 1, 40000);
+(75, 1, 8, 1, 40000),
+(76, 5, 10, 1, 196678000),
+(77, 6, 5, 1, 19799000),
+(78, 7, 6, 1, 19049000),
+(79, 8, 4, 1, 37799000),
+(80, 8, 5, 1, 19799000),
+(81, 9, 69, 1, 39000000),
+(82, 10, 71, 1, 44990000),
+(83, 11, 71, 1, 44990000),
+(84, 12, 4, 1, 37799000),
+(85, 13, 71, 1, 44990000);
 
 -- --------------------------------------------------------
 
@@ -285,22 +315,22 @@ INSERT INTO `products` (`product_id`, `product_cat`, `product_brand`, `product_t
 (38, 3, 1, 'Apple Macbook Pro 14', 59999000, 'Apple M2 Pro 12C CPU/19C GPU/16GB RAM/1TB SSD/14.2 inch/Mac OS/Xám', 'apple1.png', 'Apple'),
 (39, 2, 1, 'Apple Macbook Air', 38899000, 'Apple M2/8C CPU/8C GPU/16GB RAM/512GB SSD/13.6/Mac OS/B?c', 'apple4.png', 'Apple'),
 (40, 2, 1, 'Apple Macbook Pro 16', 60499000, 'Apple M1 Pro/16GB RAM/512GB SSD/16.2 inch/Mac OS/B?c', 'apple5.png', 'Apple'),
-(45, 1, 3, 'Laptop HP Envy X360', 26999000, 'i7 1250U/16GB RAM/512GB SSD/13.3 QHD C?m ?ng/Bút/Win11/Xanh', 'hp4.png', 'HP'),
-(46, 1, 3, 'Laptop HP 15s-fq2712T', 10599000, 'i3 1115G4/8GB RAM/256GB SSD/15.6 HD/Win11/B?c', 'hp5.JPG', 'HP'),
+(45, 2, 3, 'Laptop HP Envy X360', 26999000, 'i7 1250U/16GB RAM/512GB SSD/13.3 QHD C?m ?ng/Bút/Win11/Xanh', 'hp4.png', 'HP'),
+(46, 2, 3, 'Laptop HP 15s-fq2712T', 10599000, 'i3 1115G4/8GB RAM/256GB SSD/15.6 HD/Win11/B?c', 'hp5.JPG', 'HP'),
 (47, 4, 3, 'Laptop HP 15s-fq2663TU', 9999000, 'i3 1115G4/4GB RAM/256GB SSD/15.6 HD/Win11/B?c', 'hp6.jpg', 'HP'),
-(48, 1, 4, 'Laptop Acer Swift 3 SF314-511-55QE', 17999000, 'i5-1135G7/16GBRAM/512GB SSD/14.0 inch FHD IPS/Win11/B?c', 'acer5.jpg', 'Acer'),
-(49, 1, 4, 'Laptop Acer Swift 3 SF314-512-56QN', 20299000, 'i5-1240P/16GB RAM/512GB SSD/14.0 inch QHD IPS/Win11/B?c/v? nhôm', 'acer6.jpg', 'Acer'),
-(50, 3, 4, 'Laptop Acer Gaming Nitro 5 Tiger', 28499000, 'i7 12700H/8GB Ram/512GB SSD/RTX3050Ti 4G/15.6 inch FHD 144Hz/Win 11/?en', 'acer7.JPG', 'Acer'),
-(51, 3, 2, 'Laptop Samsung Galaxy Book Pr', 16990000, ' Intel Core i5-1135G7 | 15.6 inch', 'samsung4.JPG', 'Samsung'),
-(52, 3, 2, 'Laptop Samsung Galaxy Book Flex 2', 17999000, 'Alpha NP730QDA KB3US - Intel Core i5', 'samsung5.JPG', 'Samsung'),
-(53, 3, 2, 'Laptop Samsung Galaxy Book2 360', 87000000, 'Intel Core i7-1255U | 13 inch Full HD', 'samsung6.JPG', 'Samsung'),
-(54, 3, 6, 'Laptop MSI Gaming Katana 15', 34339000, 'shirts', 'msi4.png', 'msi'),
-(55, 3, 6, 'Laptop MSI Modern 15', 14199000, 'shirts', 'msi5.png', 'msi'),
-(56, 3, 6, 'Laptop MSI Gaming GF63 Thin ', 16799000, 'shirts', 'msi6.png', 'msi'),
-(57, 3, 7, 'Laptop Lenovo Thinkpad E15 G4 ', 18599000, 'shirts', 'lenovo4.png', 'lenovo'),
-(58, 3, 7, 'Laptop Lenovo Thinkpad E14', 19899000, 'shirts', 'lenovo5.png', 'lenovo'),
-(59, 3, 7, 'Laptop Lenovo IdeaPad Slim 5 Pro 14AR7H', 21349000, 'shirts', 'lenovo6.png', 'lenovo'),
-(60, 3, 8, 'Laptop LG Gram 16ZD90Q-G.AH78A5 ', 43349000, 'shirts', 'lg4.png', 'lg'),
+(48, 2, 4, 'Laptop Acer Swift 3 SF314-511-55QE', 17999000, 'i5-1135G7/16GBRAM/512GB SSD/14.0 inch FHD IPS/Win11/B?c', 'acer5.jpg', 'Acer'),
+(49, 2, 4, 'Laptop Acer Swift 3 SF314-512-56QN', 20299000, 'i5-1240P/16GB RAM/512GB SSD/14.0 inch QHD IPS/Win11/B?c/v? nhôm', 'acer6.jpg', 'Acer'),
+(50, 1, 4, 'Laptop Acer Gaming Nitro 5 Tiger', 28499000, 'i7 12700H/8GB Ram/512GB SSD/RTX3050Ti 4G/15.6 inch FHD 144Hz/Win 11/?en', 'acer7.JPG', 'Acer'),
+(51, 4, 2, 'Laptop Samsung Galaxy Book Pro', 16990000, ' Intel Core i5-1135G7 | 15.6 inch', 'samsung4.JPG', 'Samsung'),
+(52, 4, 2, 'Laptop Samsung Galaxy Book Flex 2', 17999000, 'Alpha NP730QDA KB3US - Intel Core i5', 'samsung5.JPG', 'Samsung'),
+(53, 4, 2, 'Laptop Samsung Galaxy Book2 360', 87000000, 'Intel Core i7-1255U | 13 inch Full HD', 'samsung6.JPG', 'Samsung'),
+(54, 1, 6, 'Laptop MSI Gaming Katana 15', 34339000, 'shirts', 'msi4.png', 'msi'),
+(55, 2, 6, 'Laptop MSI Modern 15', 14199000, 'shirts', 'msi5.png', 'msi'),
+(56, 1, 6, 'Laptop MSI Gaming GF63 Thin ', 16799000, 'shirts', 'msi6.png', 'msi'),
+(57, 2, 7, 'Laptop Lenovo Thinkpad E15 G4 ', 18599000, 'shirts', 'lenovo4.png', 'lenovo'),
+(58, 2, 7, 'Laptop Lenovo Thinkpad E14', 19899000, 'shirts', 'lenovo5.png', 'lenovo'),
+(59, 2, 7, 'Laptop Lenovo IdeaPad Slim 5 Pro 14AR7H', 21349000, 'shirts', 'lenovo6.png', 'lenovo'),
+(60, 4, 8, 'Laptop LG Gram 16ZD90Q-G.AH78A5 ', 43349000, 'shirts', 'lg4.png', 'lg'),
 (61, 4, 8, 'Laptop LG Gram 16ZD90Q-G.AX51A5', 28299000, 'lg', 'lg5.png', 'lg'),
 (62, 4, 8, 'Laptop LG Gram 17Z90P-G.AH78A5', 29990000, 'lg', 'lg6.png', 'lg'),
 (63, 2, 9, 'Laptop Asus ZenBook UX3402VA-KM085W', 26299000, 'i5 1340P/16GB RAM/512GB SSD/14 Oled/Win11', 'asus4.png', 'Asus'),
@@ -312,12 +342,14 @@ INSERT INTO `products` (`product_id`, `product_cat`, `product_brand`, `product_t
 (69, 1, 10, 'Laptop Gaming Dell Alienware M15 R7', 61990000, 'AMD Ryzen 9 6900HX/16GB/512GB/GeForce RTX 3080Ti/15.6\" QHD/Win 11', 'alienware4.png', 'Alienware'),
 (70, 1, 10, 'Laptop Gaming Dell Alienware M15 R7', 39000000, 'i7 12700H /16GBRam/1TB SSD/RTX3070Ti 8G/15.6 inch QHD 165Hz/Win 11', 'alienware5.png', 'Alienware'),
 (71, 1, 10, 'Laptop Gaming Dell Alienware M15 R6 P109F001CBL', 44990000, 'i7 12700H /16GBRam/2TB SSD/RTX3070Ti 8G/16.0 inch UHD+ AMOLED/Win 11', 'alienware6.png', 'Alienware'),
-(72, 3, 5, 'Laptop Dell Inspiron 5620 ', 22649000, 'shirts', 'dell4.png', 'dell'),
-(73, 3, 5, 'Laptop Dell Inspiron 3520', 13499000, 'shirts', 'dell5.png', 'dell'),
-(74, 3, 5, 'Laptop Dell Inspiron 3520', 13799000, 'shirts', 'dell6.png', 'dell'),
-(75, 3, 2, 'Samsung Galaxy Book Flex', 19983738, 'Samsung Galaxy Book Flex Alpha 13 3 34 Touch 8Gb 256Gb Intel Core I5 10210U X41 6Ghz Royal Silver', 'samsung1.png', '	LPDDR4X'),
-(76, 3, 2, 'Samsung Chromebook 4 ', 13196121, 'Samsung Chromebook 4 Chrome 11 6 34Intel Celeron Processor N4000 4Gb Ram 32Gb  Gigabit Wi Fi Xe310Xb', 'samsung2.png', 'HHNFGASJ'),
-(77, 3, 2, 'Samsung Galaxy Book Go', 11600400, 'Samsung Galaxy Book Go 14 34  Laptop Qualcomm Snapdragon 7C Gen 2 4Gb Ram 64GB Silver Windows 10', 'samsung3.png', 'HTGDJDS');
+(72, 2, 5, 'Laptop Dell Inspiron 5620 ', 22649000, 'shirts', 'dell4.png', 'dell'),
+(73, 2, 5, 'Laptop Dell Inspiron 3520', 13499000, 'shirts', 'dell5.png', 'dell'),
+(74, 2, 5, 'Laptop Dell Inspiron 3520', 13799000, 'shirts', 'dell6.png', 'dell'),
+(75, 4, 2, 'Samsung Galaxy Book Flex', 19983738, 'Samsung Galaxy Book Flex Alpha 13 3 34 Touch 8Gb 256Gb Intel Core I5 10210U X41 6Ghz Royal Silver', 'samsung1.png', '	LPDDR4X'),
+(76, 2, 2, 'Samsung Chromebook 4 ', 13196121, 'Samsung Chromebook 4 Chrome 11 6 34Intel Celeron Processor N4000 4Gb Ram 32Gb  Gigabit Wi Fi Xe310Xb', 'samsung2.png', 'HHNFGASJ'),
+(77, 2, 2, 'Samsung Galaxy Book Go', 11600400, 'Samsung Galaxy Book Go 14 34  Laptop Qualcomm Snapdragon 7C Gen 2 4Gb Ram 64GB Silver Windows 10', 'samsung3.png', 'HTGDJDS'),
+(79, 2, 3, 'Abcac', 73770000, 'abcc', '1688090100_alienware3.png', 'Gaming'),
+(80, 1, 4, 'Acerrrrr', 19000000, '?ây là s?n ph?m c?a hãng Acer', '1688109717_alienware1.png', 'Acer');
 
 -- --------------------------------------------------------
 
@@ -334,6 +366,13 @@ CREATE TABLE `reviews` (
   `datetime` datetime NOT NULL,
   `rating` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `reviews`
+--
+
+INSERT INTO `reviews` (`review_id`, `product_id`, `name`, `email`, `review`, `datetime`, `rating`) VALUES
+(1, 72, '??ng V?n Tu?n', 'vantuan100301@gmail.com', 'sfdasf', '2023-06-29 18:41:58', 2);
 
 -- --------------------------------------------------------
 
@@ -359,7 +398,10 @@ CREATE TABLE `user_info` (
 INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
 (25, 'otheruser', 'user', 'otheruser@gmail.com', 'support', '1234446576', 'New York', 'Kumbalagodu'),
 (26, 'Hieu', 'Trinh', 'byn1612@gmail.com', 'BGBFS8SXzUhzgxi', '0339369512', 'VietNam', 'HaNoi'),
-(27, 'Ricardo', 'Milo', 'venkey@gmail.com', 'H8agvdVHpu6i4Ys', '0339369321', 'VietNam', 'HaNoi');
+(27, 'Ricardo', 'Milo', 'venkey@gmail.com', 'H8agvdVHpu6i4Ys', '0339369321', 'VietNam', 'HaNoi'),
+(30, 'Dong Van', 'Tuan', 'vantuan100301@gmail.com', 'Tuan100301', '0369280523', 'Vu Thuong', 'Hà N?i'),
+(31, 'Dong Van', 'Tuan', 'tuan1553164@gmail.com', 'Tuan100301', '0369280523', 'Vu Thuong', 'HaNoi'),
+(32, 'Tai Khoan Cua', 'Khach', 'user@gmail.com', 'user12345', '0369280523', 'Vu Thuong', 'HaNoi');
 
 --
 -- Triggers `user_info`
@@ -395,7 +437,12 @@ CREATE TABLE `user_info_backup` (
 INSERT INTO `user_info_backup` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
 (25, 'otheruser', 'user', 'otheruser@gmail.com', 'puneet', '1234446576', 'New York', 'Kumbalagodu'),
 (26, 'Hieu', 'Trinh', 'byn1612@gmail.com', 'BGBFS8SXzUhzgxi', '0339369512', 'VietNam', 'HaNoi'),
-(27, 'Ricardo', 'Milo', 'venkey@gmail.com', 'H8agvdVHpu6i4Ys', '0339369321', 'VietNam', 'HaNoi');
+(27, 'Ricardo', 'Milo', 'venkey@gmail.com', 'H8agvdVHpu6i4Ys', '0339369321', 'VietNam', 'HaNoi'),
+(28, 'sdfsdf', 'sdfsdf', 'admin@gmail.com', '123456789', 'sdfsdf', 'sdfsdf', 'sdfsdf'),
+(29, 'fsdfsdf', 'sdfsdf', 'admin@gmail.com', '123456789', '234234234', 'sdfsdfsd', 'sdfsdfsdf'),
+(30, 'Dong Van', 'Tuan', 'vantuan100301@gmail.com', 'Tuan100301', '0369280523', 'Vu Thuong', 'Hà N?i'),
+(31, 'Dong Van', 'Tuan', 'tuan1553164@gmail.com', 'Tuan100301', '0369280523', 'Vu Thuong', 'HaNoi'),
+(32, 'Tai Khoan Cua', 'Khach', 'user@gmail.com', 'user12345', '0369280523', 'Vu Thuong', 'HaNoi');
 
 -- --------------------------------------------------------
 
@@ -415,16 +462,17 @@ CREATE TABLE `wishlist` (
 --
 
 INSERT INTO `wishlist` (`id`, `p_id`, `ip_add`, `user_id`) VALUES
-(1, 10, '', 26),
 (224, 0, '::1', -1),
 (282, 3, '::1', -1),
 (283, 73, '::1', 12),
 (284, 74, '::1', 12),
 (285, 0, '::1', 12),
-(286, 5, '', 26),
-(287, 4, '', 26),
-(288, 17, '', 26),
-(289, 19, '', 26);
+(290, 0, '', 26),
+(294, 19, '', 26),
+(296, 0, '', 30),
+(300, 0, '', 30),
+(303, 17, '', 30),
+(307, 0, '', 32);
 
 --
 -- Indexes for dumped tables
@@ -528,16 +576,82 @@ ALTER TABLE `admin_info`
   MODIFY `admin_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `brands`
+--
+ALTER TABLE `brands`
+  MODIFY `brand_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=318;
+
+--
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `cat_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `email_info`
+--
+ALTER TABLE `email_info`
+  MODIFY `email_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `logs`
+--
+ALTER TABLE `logs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `orders_info`
+--
+ALTER TABLE `orders_info`
+  MODIFY `order_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `order_products`
+--
+ALTER TABLE `order_products`
+  MODIFY `order_pro_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `product_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+
+--
+-- AUTO_INCREMENT for table `reviews`
+--
+ALTER TABLE `reviews`
+  MODIFY `review_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `user_info`
 --
 ALTER TABLE `user_info`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+
+--
+-- AUTO_INCREMENT for table `user_info_backup`
+--
+ALTER TABLE `user_info_backup`
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=290;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=313;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
