@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 04, 2023 at 11:09 AM
+-- Generation Time: Jul 04, 2023 at 11:11 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -128,7 +128,7 @@ INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
 (1, 'Laptop Gaming'),
 (2, 'Laptop Học tập, Văn phòng'),
 (3, 'Laptop Đồ họa'),
-(4, 'LapTop Mỏng nhẹ');
+(4, 'Laptop Mỏng nhẹ');
 
 -- --------------------------------------------------------
 
