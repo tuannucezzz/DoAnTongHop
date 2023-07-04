@@ -16,16 +16,16 @@
    Bỏ tích “Do not use AUTO_INCREMENT for zero values”
 
 8. Sau khi import thành công ta sẽ cài đặt môi trường cho dự án.
-![Alt text](image-1.png)
-![Alt text](image-2.png)
-![Alt text](image-3.png)
-![Alt text](image-4.png)
+![Alt text](screenshot\image-1.png)
+![Alt text](screenshot\image-2.png)
+![Alt text](screenshot\image-3.png)
+![Alt text](screenshot\image-4.png)
 
 9. Mở code trên IDE: VS code, cài đặt một vài extension hỗ trợ cho việc khởi chạy dự án.
-![Alt text](image.png)
+![Alt text](screenshot\image.png)
 
 10. Tiến hành chạy dự án
-![Alt text](image-5.png)
+![Alt text](screenshot\image-5.png)
 
 
 
